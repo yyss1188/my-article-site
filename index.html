@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>风从哪来 | 文章与笔记</title>
+    <meta name="description" content="一个记录小发现、分享有用信息、打破信息差的个人文章站。">
+    <link rel="stylesheet" href="./assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="返回首页">
+        <span class="brand-mark">风</span>
+        <span>
+          <strong>风从哪来</strong>
+          <small>Whence the Wind Comes</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#articles">文章</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Whence the Wind Comes</p>
+          <h1>风从哪来</h1>
+          <p>
+            这里记录我在生活、学习和信息流里捡到的小发现，也分享那些我确认过、觉得真的有帮助的东西。
+            如果一篇文章能让别人少走一点弯路，或者多看见一点背景，它就值得被写下来。
+          </p>
+        </div>
+        <div class="signal-panel" aria-label="站点信息">
+          <div>
+            <span>Focus</span>
+            <strong>Findings / Tools / Notes</strong>
+          </div>
+          <div>
+            <span>Promise</span>
+            <strong>Useful before loud</strong>
+          </div>
+          <div>
+            <span>Publish</span>
+            <strong>Owner-written only</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="文章筛选">
+        <div>
+          <p class="section-kicker">Library</p>
+          <h2 id="articles">最新文章</h2>
+        </div>
+        <label class="search-box">
+          <span>搜索</span>
+          <input id="searchInput" type="search" placeholder="输入标题、摘要或标签">
+        </label>
+      </section>
+
+      <section class="tag-row" id="tagRow" aria-label="标签筛选"></section>
+      <section class="post-grid" id="postGrid" aria-live="polite"></section>
+
+      <section class="about-band" id="about">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>这是一个只由我发文的个人空间。</h2>
+        </div>
+        <p>
+          我会把这里当成一间安静的小资料室：写自己的观察、整理自己验证过的经验，也把一些原本散落在角落里的信息重新摆到明处。
+          网站没有公开投稿入口，文章只由站长维护和发布。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> 风从哪来</span>
+      <span>Powered by static pages</span>
+    </footer>
+
+    <script src="./posts.js"></script>
+    <script src="./assets/site.js"></script>
+  </body>
+</html>
