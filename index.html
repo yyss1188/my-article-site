@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>观星台 | 文章与笔记</title>
+    <meta name="description" content="一个零成本部署的个人文章站，适合发布科普、数学、统计和学习笔记。">
+    <link rel="stylesheet" href="./assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="返回首页">
+        <span class="brand-mark">G</span>
+        <span>
+          <strong>观星台</strong>
+          <small>Articles & Notes</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#articles">文章</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal research notebook</p>
+          <h1>把想法整理成能被别人认真阅读的文章。</h1>
+          <p>
+            这里可以放科普、数学推导、统计建模、读书笔记和长期项目记录。
+            站点完全静态，部署到免费平台后，别人打开网址就能访问。
+          </p>
+        </div>
+        <div class="signal-panel" aria-label="站点信息">
+          <div>
+            <span>Focus</span>
+            <strong>Science / Math / Notes</strong>
+          </div>
+          <div>
+            <span>Cost</span>
+            <strong>0 RMB hosting</strong>
+          </div>
+          <div>
+            <span>Publish</span>
+            <strong>Edit posts.js</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="文章筛选">
+        <div>
+          <p class="section-kicker">Library</p>
+          <h2 id="articles">最新文章</h2>
+        </div>
+        <label class="search-box">
+          <span>搜索</span>
+          <input id="searchInput" type="search" placeholder="输入标题、摘要或标签">
+        </label>
+      </section>
+
+      <section class="tag-row" id="tagRow" aria-label="标签筛选"></section>
+      <section class="post-grid" id="postGrid" aria-live="polite"></section>
+
+      <section class="about-band" id="about">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>这是你的公开文章空间。</h2>
+        </div>
+        <p>
+          你可以把站名、颜色、简介和文章全部换成自己的。后续如果买了独立域名，
+          也可以继续沿用这套网站，不需要推倒重来。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> 观星台</span>
+      <span>Powered by static pages</span>
+    </footer>
+
+    <script src="./posts.js"></script>
+    <script src="./assets/site.js"></script>
+  </body>
+</html>
